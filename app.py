@@ -156,6 +156,6 @@ def blog_advertisement_production():
 
 @app.route('/blog/ecommerce-development')
 def blog_ecommerce_dev():
-    return render_template('blog_ecommerce_dev.html'))#
+    return render_template('blog_ecommerce_dev.html'))
 
 
