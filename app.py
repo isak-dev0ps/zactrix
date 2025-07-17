@@ -3,10 +3,14 @@ import logging
 from flask import Flask, render_template, request, jsonify, flash, redirect, url_for
 from flask_mail import Mail, Message
 
+@app.route("/")
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
-app = Flask(__name__)
 app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key-change-in-production")
 
 # Email configuration
