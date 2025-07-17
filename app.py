@@ -109,7 +109,7 @@ def submit_enquiry():
             'message': 'There was an error submitting your enquiry. Please try again.'
         }), 500
 
-# Blog routes
+#( Blog routes
 @app.route('/blog/web-development')
 def blog_web_development():
     return render_template('blog_web_development.html')
@@ -156,7 +156,6 @@ def blog_advertisement_production():
 
 @app.route('/blog/ecommerce-development')
 def blog_ecommerce_dev():
-    return render_template('blog_ecommerce_dev.html')
+    return render_template('blog_ecommerce_dev.html'))#
 
-app = Flask(__name__)
 
